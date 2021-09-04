@@ -1,0 +1,8 @@
+---
+app_name: visitors
+namespace: visitorapp
+db_name: visitors
+db_user: visitors
+db_pass: visitors
+backend_replicas: 1
+frontend_replicas: 1

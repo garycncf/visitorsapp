@@ -1,0 +1,13 @@
+apiVersion: web.example.com/v1alpha1
+kind: VisitorsApp
+metadata:
+  name: visitorsapp-sample
+spec:
+  # Add fields here
+  #appName: visitors
+  #namespace: visitorapp
+  dbName: userdb
+  dbUser: admin
+  dbPass: admin
+  backendReplicas: 1
+  frontendReplicas: 2
