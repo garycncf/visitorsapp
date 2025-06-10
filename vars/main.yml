@@ -1,6 +1,6 @@
 ---
 app_name: visitors
-namespace: visitorapp
+namespace: ansibledemo
 db_name: visitors
 db_user: visitors
 db_pass: visitors
