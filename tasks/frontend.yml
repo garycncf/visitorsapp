@@ -1,6 +1,6 @@
 ---
 - name: deploy frontend
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     definition:
       kind: Deployment
       apiVersion: apps/v1
@@ -30,7 +30,7 @@
                   - name: REACT_APP_TITLE
                     value: "{{ title }}"
 - name: create frontend service
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     definition:
       kind: Service
       apiVersion: v1
