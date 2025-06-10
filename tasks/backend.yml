@@ -1,6 +1,6 @@
 ---
 - name: deploy backend
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     definition:
       kind: Deployment
       apiVersion: apps/v1
@@ -42,7 +42,7 @@
                         name: "{{ app_name + '-mysql-auth' }}"
                         key: password
 - name: create backend service
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     definition:
       apiVersion: v1
       kind: Service
